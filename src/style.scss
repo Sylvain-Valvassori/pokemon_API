@@ -1,0 +1,145 @@
+@use './Scss_library' as *;
+
+html{
+    background-color: $clr-P2-C6;
+}
+body {
+    // padding: 0 10rem;
+
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+
+.pokemon{
+    
+    
+    max-width: 100rem;
+    height: 100%;
+
+    padding: 1rem;
+
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    .containerCardsPokemon {
+        
+        width: 100%;
+        height: auto;
+
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 10rem);
+        grid-gap: 1rem;
+    
+
+
+
+        .card-pokemon{
+            min-width: 10rem;        
+            min-height: 10rem;        
+            aspect-ratio: 1;
+        
+            // padding: .5rem;
+            
+            border-radius: 1.5rem;
+            background-color: $clr-P2-C5 ;
+        
+        
+            img{
+                width: 100%;
+                height: 100%;
+        
+                object-fit: contain;
+                object-position: center center;
+        
+                border-radius: 1rem;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+
+
+
+   
+form {
+    width: 25rem;
+    height: 3.5rem;
+    
+    display: flex;
+    align-items: center;
+    
+    border: none;
+    outline: none;
+
+    border-radius: 1rem;
+    background-color: $clr-P2-C5;
+
+    input{
+        border: none;
+        outline: none;
+        text-decoration: none;
+    
+        width: 25rem;
+        height: 3.5rem;
+        padding-left: 1.75rem;
+    
+        color: $clr-white;
+        font-size: 1.6rem;
+        font-family: $fnt-secondary;
+        background-color: transparent;
+
+
+        &::placeholder{
+
+            color: $clr-white-opacity-06 ;
+            font-size: 1.6rem;
+            font-family: $fnt-secondary;
+        }
+    }
+
+    svg {
+        cursor: pointer;
+        margin-right: 1rem;
+        height: 2rem;
+        aspect-ratio: 1;
+
+        fill: $clr-white;
+        transition: fill .3s ease-in-out;
+
+        &:hover{
+            fill: rgba($clr-white, 0.5);
+        }
+
+    }
+}
+
+
+
+
+
+
+// ---- background dote 
+.background_dote{
+    user-select: none;
+    pointer-events: none;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    background-image: radial-gradient($clr-white 1px, transparent 1px);
+    background-size: 3px 3px;
+    background-repeat: repeat;
+    background-position: center center;
+    opacity: 0.15;
+}

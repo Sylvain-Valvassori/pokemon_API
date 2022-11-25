@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+html, body, a, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* now 1.5rem = 15px */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+html {
+  background-color: #b6b8bd;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.pokemon {
+  max-width: 100rem;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pokemon .containerCardsPokemon {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-gap: 1rem;
+}
+.pokemon .containerCardsPokemon .card-pokemon {
+  min-width: 10rem;
+  min-height: 10rem;
+  aspect-ratio: 1;
+  border-radius: 1.5rem;
+  background-color: #6a9390;
+}
+.pokemon .containerCardsPokemon .card-pokemon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 1rem;
+  border: 1px solid white;
+}
+
+form {
+  width: 25rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: #6a9390;
+}
+form input {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  width: 25rem;
+  height: 3.5rem;
+  padding-left: 1.75rem;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+}
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+form svg {
+  cursor: pointer;
+  margin-right: 1rem;
+  height: 2rem;
+  aspect-ratio: 1;
+  fill: white;
+  transition: fill 0.3s ease-in-out;
+}
+form svg:hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.background_dote {
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 3px 3px;
+  background-repeat: repeat;
+  background-position: center center;
+  opacity: 0.15;
+}
+
+/*# sourceMappingURL=style.css.map */
